@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="RestAssuredSuite" verbose="1">
+    <listeners>
+        <listener class-name="com.yourorg.base.TestListener"/>
+    </listeners>
+    <test name="APITests">
+        <classes>
+            <class name="com.yourorg.tests.AuthTest"/>
+            <class name="com.yourorg.tests.AddCustomerTest"/>
+            <class name="com.yourorg.tests.ViewCustomerListTest"/>
+            <class name="com.yourorg.tests.ViewCustomerByIdTest"/>
+            <class name="com.yourorg.tests.ViewCustomerByMobileTest"/>
+            <class name="com.yourorg.tests.DeleteCustomerTest"/>
+            <class name="com.yourorg.tests.NegativeAuthTest"/>
+        </classes>
+    </test>
+</suite>

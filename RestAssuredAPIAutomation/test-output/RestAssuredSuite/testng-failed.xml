@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [RestAssuredSuite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.yourorg.base.TestListener"/>
+  </listeners>
+  <test thread-count="5" name="APITests(failed)">
+    <classes>
+      <class name="com.yourorg.tests.AddCustomerTest">
+        <methods>
+          <include name="setup"/>
+          <include name="addCustomer_ShouldReturn201_WhenValidData"/>
+        </methods>
+      </class> <!-- com.yourorg.tests.AddCustomerTest -->
+      <class name="com.yourorg.tests.NegativeAuthTest">
+        <methods>
+          <include name="getAccessToken_ShouldFail_WhenInvalidCredentials"/>
+        </methods>
+      </class> <!-- com.yourorg.tests.NegativeAuthTest -->
+      <class name="com.yourorg.tests.DeleteCustomerTest">
+        <methods>
+          <include name="setup"/>
+          <include name="deleteCustomerById_ShouldReturnError_WhenInvalidId"/>
+        </methods>
+      </class> <!-- com.yourorg.tests.DeleteCustomerTest -->
+      <class name="com.yourorg.tests.ViewCustomerByIdTest">
+        <methods>
+          <include name="setup"/>
+          <include name="viewCustomerById_ShouldReturnCustomer_WhenValidId"/>
+          <include name="viewCustomerById_ShouldReturnError_WhenInvalidId"/>
+        </methods>
+      </class> <!-- com.yourorg.tests.ViewCustomerByIdTest -->
+      <class name="com.yourorg.tests.ViewCustomerByMobileTest">
+        <methods>
+          <include name="setup"/>
+          <include name="viewCustomerByMobile_ShouldReturnError_WhenInvalidMobile"/>
+        </methods>
+      </class> <!-- com.yourorg.tests.ViewCustomerByMobileTest -->
+    </classes>
+  </test> <!-- APITests(failed) -->
+</suite> <!-- Failed suite [RestAssuredSuite] -->

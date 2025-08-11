@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="12" passed="12" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-08-10T23:43:23 IST" name="RestAssuredSuite" finished-at="2025-08-10T23:43:34 IST" duration-ms="11338">
+    <groups>
+    </groups>
+    <test started-at="2025-08-10T23:43:23 IST" name="APITests" finished-at="2025-08-10T23:43:34 IST" duration-ms="11338">
+      <class name="com.yourorg.tests.NegativeAuthTest">
+        <test-method signature="getAccessToken_ShouldFail_WhenInvalidCredentials()[pri:0, instance:com.yourorg.tests.NegativeAuthTest@6933b6c6]" started-at="2025-08-10T23:43:33 IST" name="getAccessToken_ShouldFail_WhenInvalidCredentials" finished-at="2025-08-10T23:43:34 IST" duration-ms="1032" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getAccessToken_ShouldFail_WhenInvalidCredentials -->
+      </class> <!-- com.yourorg.tests.NegativeAuthTest -->
+      <class name="com.yourorg.tests.AuthTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.yourorg.tests.AuthTest@57db2b13]" started-at="2025-08-10T23:43:22 IST" name="setup" finished-at="2025-08-10T23:43:23 IST" duration-ms="622" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="getAccessToken_ShouldReturnValidToken()[pri:0, instance:com.yourorg.tests.AuthTest@57db2b13]" started-at="2025-08-10T23:43:23 IST" name="getAccessToken_ShouldReturnValidToken" finished-at="2025-08-10T23:43:26 IST" duration-ms="3149" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getAccessToken_ShouldReturnValidToken -->
+      </class> <!-- com.yourorg.tests.AuthTest -->
+      <class name="com.yourorg.tests.ViewCustomerListTest">
+        <test-method signature="viewCustomerList_ShouldReturnError_WhenUnauthorized()[pri:0, instance:com.yourorg.tests.ViewCustomerListTest@6a4f1a55]" started-at="2025-08-10T23:43:28 IST" name="viewCustomerList_ShouldReturnError_WhenUnauthorized" finished-at="2025-08-10T23:43:28 IST" duration-ms="729" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- viewCustomerList_ShouldReturnError_WhenUnauthorized -->
+        <test-method signature="viewCustomerList_ShouldReturnNonEmptyList()[pri:0, instance:com.yourorg.tests.ViewCustomerListTest@6a4f1a55]" started-at="2025-08-10T23:43:28 IST" name="viewCustomerList_ShouldReturnNonEmptyList" finished-at="2025-08-10T23:43:29 IST" duration-ms="815" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- viewCustomerList_ShouldReturnNonEmptyList -->
+      </class> <!-- com.yourorg.tests.ViewCustomerListTest -->
+      <class name="com.yourorg.tests.ViewCustomerByMobileTest">
+        <test-method signature="viewCustomerByMobile_ShouldReturnCustomer_WhenValidMobile()[pri:0, instance:com.yourorg.tests.ViewCustomerByMobileTest@2584b82d]" started-at="2025-08-10T23:43:30 IST" name="viewCustomerByMobile_ShouldReturnCustomer_WhenValidMobile" finished-at="2025-08-10T23:43:31 IST" duration-ms="732" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- viewCustomerByMobile_ShouldReturnCustomer_WhenValidMobile -->
+        <test-method signature="viewCustomerByMobile_ShouldReturnError_WhenInvalidMobile()[pri:0, instance:com.yourorg.tests.ViewCustomerByMobileTest@2584b82d]" started-at="2025-08-10T23:43:31 IST" name="viewCustomerByMobile_ShouldReturnError_WhenInvalidMobile" finished-at="2025-08-10T23:43:32 IST" duration-ms="685" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- viewCustomerByMobile_ShouldReturnError_WhenInvalidMobile -->
+      </class> <!-- com.yourorg.tests.ViewCustomerByMobileTest -->
+      <class name="com.yourorg.tests.ViewCustomerByIdTest">
+        <test-method signature="viewCustomerById_ShouldReturnCustomer_WhenValidId()[pri:0, instance:com.yourorg.tests.ViewCustomerByIdTest@7dfd3c81]" started-at="2025-08-10T23:43:29 IST" name="viewCustomerById_ShouldReturnCustomer_WhenValidId" finished-at="2025-08-10T23:43:30 IST" duration-ms="672" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- viewCustomerById_ShouldReturnCustomer_WhenValidId -->
+        <test-method signature="viewCustomerById_ShouldReturnError_WhenInvalidId()[pri:0, instance:com.yourorg.tests.ViewCustomerByIdTest@7dfd3c81]" started-at="2025-08-10T23:43:30 IST" name="viewCustomerById_ShouldReturnError_WhenInvalidId" finished-at="2025-08-10T23:43:30 IST" duration-ms="696" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- viewCustomerById_ShouldReturnError_WhenInvalidId -->
+      </class> <!-- com.yourorg.tests.ViewCustomerByIdTest -->
+      <class name="com.yourorg.tests.DeleteCustomerTest">
+        <test-method signature="deleteCustomerById_ShouldReturn200_WhenValidId()[pri:0, instance:com.yourorg.tests.DeleteCustomerTest@7bbc8656]" started-at="2025-08-10T23:43:32 IST" name="deleteCustomerById_ShouldReturn200_WhenValidId" finished-at="2025-08-10T23:43:33 IST" duration-ms="638" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteCustomerById_ShouldReturn200_WhenValidId -->
+        <test-method signature="deleteCustomerById_ShouldReturnError_WhenInvalidId()[pri:0, instance:com.yourorg.tests.DeleteCustomerTest@7bbc8656]" started-at="2025-08-10T23:43:33 IST" name="deleteCustomerById_ShouldReturnError_WhenInvalidId" finished-at="2025-08-10T23:43:33 IST" duration-ms="657" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteCustomerById_ShouldReturnError_WhenInvalidId -->
+      </class> <!-- com.yourorg.tests.DeleteCustomerTest -->
+      <class name="com.yourorg.tests.AddCustomerTest">
+        <test-method signature="addCustomer_ShouldReturn201_WhenValidData()[pri:0, instance:com.yourorg.tests.AddCustomerTest@4dc27487]" started-at="2025-08-10T23:43:26 IST" name="addCustomer_ShouldReturn201_WhenValidData" finished-at="2025-08-10T23:43:27 IST" duration-ms="729" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addCustomer_ShouldReturn201_WhenValidData -->
+        <test-method signature="addCustomer_ShouldReturnError_WhenMissingRequiredFields()[pri:0, instance:com.yourorg.tests.AddCustomerTest@4dc27487]" started-at="2025-08-10T23:43:27 IST" name="addCustomer_ShouldReturnError_WhenMissingRequiredFields" finished-at="2025-08-10T23:43:28 IST" duration-ms="664" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addCustomer_ShouldReturnError_WhenMissingRequiredFields -->
+      </class> <!-- com.yourorg.tests.AddCustomerTest -->
+    </test> <!-- APITests -->
+  </suite> <!-- RestAssuredSuite -->
+</testng-results>

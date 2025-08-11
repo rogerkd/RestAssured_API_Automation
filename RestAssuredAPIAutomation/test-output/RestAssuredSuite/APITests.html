@@ -1,0 +1,140 @@
+<html>
+<head>
+<title>TestNG:  APITests</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>APITests</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>12/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sun Aug 10 23:43:23 IST 2025</td>
+</tr>
+<tr><td>Total time:</td><td>11 seconds (11338 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.yourorg.tests.AddCustomerTest.addCustomer_ShouldReturn201_WhenValidData()'><b>addCustomer_ShouldReturn201_WhenValidData</b><br>Test class: com.yourorg.tests.AddCustomerTest</td>
+<td></td>
+<td>0</td>
+<td>com.yourorg.tests.AddCustomerTest@4dc27487</td></tr>
+<tr>
+<td title='com.yourorg.tests.DeleteCustomerTest.deleteCustomerById_ShouldReturn200_WhenValidId()'><b>deleteCustomerById_ShouldReturn200_WhenValidId</b><br>Test class: com.yourorg.tests.DeleteCustomerTest</td>
+<td></td>
+<td>0</td>
+<td>com.yourorg.tests.DeleteCustomerTest@7bbc8656</td></tr>
+<tr>
+<td title='com.yourorg.tests.AddCustomerTest.addCustomer_ShouldReturnError_WhenMissingRequiredFields()'><b>addCustomer_ShouldReturnError_WhenMissingRequiredFields</b><br>Test class: com.yourorg.tests.AddCustomerTest</td>
+<td></td>
+<td>0</td>
+<td>com.yourorg.tests.AddCustomerTest@4dc27487</td></tr>
+<tr>
+<td title='com.yourorg.tests.ViewCustomerByIdTest.viewCustomerById_ShouldReturnError_WhenInvalidId()'><b>viewCustomerById_ShouldReturnError_WhenInvalidId</b><br>Test class: com.yourorg.tests.ViewCustomerByIdTest</td>
+<td></td>
+<td>0</td>
+<td>com.yourorg.tests.ViewCustomerByIdTest@7dfd3c81</td></tr>
+<tr>
+<td title='com.yourorg.tests.ViewCustomerByIdTest.viewCustomerById_ShouldReturnCustomer_WhenValidId()'><b>viewCustomerById_ShouldReturnCustomer_WhenValidId</b><br>Test class: com.yourorg.tests.ViewCustomerByIdTest</td>
+<td></td>
+<td>0</td>
+<td>com.yourorg.tests.ViewCustomerByIdTest@7dfd3c81</td></tr>
+<tr>
+<td title='com.yourorg.tests.ViewCustomerByMobileTest.viewCustomerByMobile_ShouldReturnCustomer_WhenValidMobile()'><b>viewCustomerByMobile_ShouldReturnCustomer_WhenValidMobile</b><br>Test class: com.yourorg.tests.ViewCustomerByMobileTest</td>
+<td></td>
+<td>0</td>
+<td>com.yourorg.tests.ViewCustomerByMobileTest@2584b82d</td></tr>
+<tr>
+<td title='com.yourorg.tests.ViewCustomerListTest.viewCustomerList_ShouldReturnError_WhenUnauthorized()'><b>viewCustomerList_ShouldReturnError_WhenUnauthorized</b><br>Test class: com.yourorg.tests.ViewCustomerListTest</td>
+<td></td>
+<td>0</td>
+<td>com.yourorg.tests.ViewCustomerListTest@6a4f1a55</td></tr>
+<tr>
+<td title='com.yourorg.tests.ViewCustomerListTest.viewCustomerList_ShouldReturnNonEmptyList()'><b>viewCustomerList_ShouldReturnNonEmptyList</b><br>Test class: com.yourorg.tests.ViewCustomerListTest</td>
+<td></td>
+<td>0</td>
+<td>com.yourorg.tests.ViewCustomerListTest@6a4f1a55</td></tr>
+<tr>
+<td title='com.yourorg.tests.AuthTest.getAccessToken_ShouldReturnValidToken()'><b>getAccessToken_ShouldReturnValidToken</b><br>Test class: com.yourorg.tests.AuthTest</td>
+<td></td>
+<td>3</td>
+<td>com.yourorg.tests.AuthTest@57db2b13</td></tr>
+<tr>
+<td title='com.yourorg.tests.DeleteCustomerTest.deleteCustomerById_ShouldReturnError_WhenInvalidId()'><b>deleteCustomerById_ShouldReturnError_WhenInvalidId</b><br>Test class: com.yourorg.tests.DeleteCustomerTest</td>
+<td></td>
+<td>0</td>
+<td>com.yourorg.tests.DeleteCustomerTest@7bbc8656</td></tr>
+<tr>
+<td title='com.yourorg.tests.ViewCustomerByMobileTest.viewCustomerByMobile_ShouldReturnError_WhenInvalidMobile()'><b>viewCustomerByMobile_ShouldReturnError_WhenInvalidMobile</b><br>Test class: com.yourorg.tests.ViewCustomerByMobileTest</td>
+<td></td>
+<td>0</td>
+<td>com.yourorg.tests.ViewCustomerByMobileTest@2584b82d</td></tr>
+<tr>
+<td title='com.yourorg.tests.NegativeAuthTest.getAccessToken_ShouldFail_WhenInvalidCredentials()'><b>getAccessToken_ShouldFail_WhenInvalidCredentials</b><br>Test class: com.yourorg.tests.NegativeAuthTest</td>
+<td></td>
+<td>1</td>
+<td>com.yourorg.tests.NegativeAuthTest@6933b6c6</td></tr>
+</table><p>
+</body>
+</html>
